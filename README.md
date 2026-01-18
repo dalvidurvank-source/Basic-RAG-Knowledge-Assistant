@@ -27,10 +27,10 @@ Basic-RAG-Knowledge-Assistant/
 ├── src/
 │ ├── retrieval_qa.py
 │ └── conversational_rag.py
-├── data/
 ├── requirements.txt
 ├── README.md
-└── .gitignore
+
+---
 
 ## ⚙️ Setup Instructions
 
@@ -39,11 +39,14 @@ Basic-RAG-Knowledge-Assistant/
 git clone https://github.com/dalvidurvank-source/Basic-RAG-Knowledge-Assistant.git
 cd Basic-RAG-Knowledge-Assistant
 ```
-
 ### 2️⃣ Create virtual environment
-```bash
+```
 python -m venv venv
-source venv/Scripts/activate   # Windows
+# Windows
+venv\Scripts\activate
+
+# macOS/Linux
+source venv/bin/activate
 ```
 
 ### 3️⃣ Install dependencies
@@ -51,10 +54,8 @@ source venv/Scripts/activate   # Windows
 pip install -r requirements.txt
 ```
 
-### 4️⃣ How to run 
+### 4️⃣ How to run
 ```
 python src/retrieval_qa.py
 python src/conversational_rag.py
 ```
-
-
